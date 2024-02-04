@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  font-family: EB Garamond, serif;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.trybewarts-header-logo {
+  width: 70px;
+}
+
+#trybewarts-header-title {
+  font-size: 50px;
+}
+
+.trybewarts-login {
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  align-items: normal;
+  gap: 3px;
+}
+
+.Enter {
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+  border-color: black;
+  border: 1px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(117, 64, 64);
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  width: 675px;
+  background-color: rgb(245, 238, 214);
+  border: 2px solid black;
+}
+
+#trybewarts-forms-logo {
+  width: 500px;
+  height: 500px;
+  margin-left: 90px;
+}
+
+#label-family {
+  flex-direction: column;
+  align-items: normal;
+}
+
+.label-login {
+  display: flex;
+}
+
+#agreement-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.form-check-input:checked[ type = 'checkbox' ] {
+  background-color: rgb(50, 169, 147);
+  border-color: rgb(51, 166, 145);
+}
+
+.btn-outline {
+  --bs-btn-border-color: rgb(50, 169, 147);
+  --bs-btn-color: rgb(50, 169, 147);
+  --bs-btn-border-color: rgb(50, 169, 147);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: rgb(50, 169, 147);
+  --bs-btn-hover-border-color: rgb(50, 169, 147);
+  --bs-btn-focus-shadow-rgb: rgb(50, 169, 147);
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(117, 64, 64);
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Trybewarts</title>
+</head>
+
+<body>
+    <!-- 1. Crie uma barra verde na parte superior da página -->
+    <header class="header">
+        <!-- 2. Adicione o logotipo da Trybewarts -->
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+        <!-- 4. Crie um título com o texto "Trybewarts" centralizado dentro do Header -->
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <!--3. Acrescente um formulário de login no header-->
+        <form class="trybewarts-login" action="" method="GET" enctype="multipart/form-data">
+            <label class="label-login" for="txtname">Email:
+                <input type="email" name="email" id="txtname" placeholder="Email" autocomplete="on"
+                    class="form-control">
+            </label>
+            <label class="label-login" for="txtsenha">Senha:
+                <input type="password" name="password" id="txtsenha" placeholder="Senha" autocomplete="on"
+                    class="form-control">
+            </label>
+            <button type="submit" class="Enter" id="Entrar">Entrar</button>
+        </form>
+    </header>
+    <main>
+        <!-- 6. Faça com que a direção do formulário seja vertical -->
+        <form id="evaluation-form" action="" method="GET" enctype="multipart/form-data" style="width: 675px">
+            <!-- 8. Acrescente inputs de nome, sobrenome e email ao formulário -->
+            <div> <!-- 10. Posicione os campos de Nome e Sobrenome lado a lado-->
+                <label for="input-name">Nome:
+                    <input type="text" id="input-name" placeholder="Nome" class="form-control">
+                </label>
+                <label for="input-lastname">Sobrenome:
+                    <input type="text" id="input-lastname" placeholder="Sobrenome" class="form-control">
+                </label>
+            </div>
+            <div> <!-- 11. Posicione os campos de Email e Casa lado a lado -->
+                <label for="" class="form-label">Email:
+                    <input type="email" id="input-email" placeholder="Email" class="form-control">
+                </label>
+
+                <!-- 9. Acrescente um select ao formulário -->
+                <label for="house">Casa:
+                    <select name="houseSelect" id="house" class="form-select">
+                        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                        <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                        <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                    </select>
+                </label>
+            </div>
+            <!--12. Adicione 3 inputs do tipo radio ao formulário -->
+            <label for="family" id="label-family" class="form-label">Qual sua família?</label>
+            <label for="frontendOption" class="form-label">
+                <input type="radio" name="family" value="Frontend" id="frontendOption">Frontend
+            </label>
+            <label for="backendOption" class="form-label">
+                <input type="radio" name="family" value="Backend" id="backendOption">Backend
+            </label>
+            <label for="fullStackOption" class="form-label">
+                <input type="radio" name="family" value="FullStack" id="fullStackOption">FullStack
+            </label>
+            <!-- 13. Crie inputs do tipo checkbox -->
+           
+                <label id="label-content" class="form-label">Qual conteúdo você está com mais vontade de
+                    aprender?</label>
+                <label for="txtComunicacao" class="form-label">
+                    <input type="checkbox" class="subject" value="Comunicação" id="txtComunicacao">Comunicação
+                </label>
+                <label for="txtTrabalho" class="form-label">
+                    <input type="checkbox" class="subject" value="Trabalho em equipe" id="txtTrabalho">Trabalho em
+                    equipe
+                </label>
+                <label for="txtNegociaçao" class="form-label">
+                    <input type="checkbox" class="subject" value="Negociação" id="txtNegociaçao">Negociação
+                </label>
+                <label for="txtEscuta" class="form-label">
+                    <input type="checkbox" class="subject" value="Escuta ativa" id="txtEscuta">Escuta ativa
+                </label>
+                <label for="txtMetodos" class="form-label">
+                    <input type="checkbox" class="subject" value="Métodos de array" id="txtMetodos">Métodos de array
+                </label>
+                <label for="txtJest" class="form-label">
+                    <input type="checkbox" class="subject" value="Jest" id="txtJest">Jest
+                </label>
+         
+            <!-- 14. Crie um campo de avaliação -->
+            <div>
+                <label id="label-rate" class="form-label"> Como você avalia a Trybewarts?
+                    1 <input type="radio" name="rate" value="1">
+                    2 <input type="radio" name="rate" value="2">
+                    3 <input type="radio" name="rate" value="3">
+                    4 <input type="radio" name="rate" value="4">
+                    5 <input type="radio" name="rate" value="5">
+                    6 <input type="radio" name="rate" value="6">
+                    7 <input type="radio" name="rate" value="7">
+                    8 <input type="radio" name="rate" value="8">
+                    9 <input type="radio" name="rate" value="9">
+                    10 <input type="radio" name="rate" value="10">
+                </label>
+            </div>
+            <!--15. Crie uma textarea-->
+            <label class="textarea" class="form-label">Descreva os principais pontos de aprendizado até aqui (1 hard
+                skill / 1 soft
+                skill):</label>
+            <textarea name="textearea" id="textarea" minlength="20" maxlength="500" cols="70"
+                rows="5" class="form-control"> JavaScript/ Gestão de tempo </textarea>
+            </label>
+            <div id="agreement-submit">
+                <!-- 16. Crie uma checkbox que servirá para validar as informações digitadas pela pessoa usuária -->
+                <label for="agreement" id="label-infos" class="form-label">
+                    <input type="checkbox" id="agreement" class="form-check-input">Você concorda com o uso das
+                    informações acima?
+                </label>
+                <!-- 17. Crie um botão de "Enviar" para submeter o formulário -->
+                <button type="submit" id="submit-btn" class="btn btn-outline">Enviar</button>
+            </div>
+        </form>
+        <!-- 7. Adicione a logo da Trybewarts ao lado direito da página -->
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
+    </main>
+    <!--19. Crie um rodapé ao final da página -->
+    <footer>Direitos reservados à Trybewarts©</footer>
+</body>
+
+</html>

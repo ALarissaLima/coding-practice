@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <title>Travel Form</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <!-- 1. Adicione o título ao formulário -->
+      <h1 id="title">Formulário Trybe Travel</h1>
+      <form id="main-form">
+        <!-- 2. Adicione os campos do formulário -->
+        <!--Nome Completo -->
+        <label for="fullName" class="form-label">Nome:
+          <input type="text" name="txtName" id="fullName" class="form-control" minlength="10" maxlength="40"
+            autocomplete="on" required>
+        </label>
+        <!-- E-mail -->
+        <label for="email" class="form-label">E-mail:
+          <input type="email" name="txtEmail" id="email" class="form-control" minlength="10" maxlength="40"
+            autocomplete="on" required>
+        </label>
+        <!-- Destino Preferido -->
+        <label for="destination-1" class="form-label">
+          <p>Destino Preferido:</p>
+          <input type="radio" id="destination-1" name="destinations" value="Cidade"> Cidade
+        </label>
+        <label for="destination-2" class="form-label">
+          <input type="radio" id="destination-2" name="destinations" value="Campo">Campo
+        </label>
+        <label for="destination-3" class="form-label">
+          <input type="radio" id="destination-3" name="destinations" value="Praia"> Praia
+        </label>
+        <label for="destination-4" class="form-label">
+          <input type="radio" id="destination-4" name="destinations" value="Montanha"> Montanha
+        </label>
+        <!--Pergunta concurso TrybeTrip-->
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea name="txt-question" id="question" cols="40" rows="3" maxlength="500"
+          placeholder="Digite sua resposta aqui" class="form-control">
+    </textarea>
+        <!-- Data para realizar sua viagem -->
+        <label for="date" class="form-label">
+          <p>Qual a melhor data para realizar sua viagem?</p>
+          <input type="date" name="txt-date" id="date" class="form-control">
+        </label>
+        <!-- checkbox oportunidades-->
+        <label for="promo" class="form-label">
+          <p>Gostaria de receber outras incríveis oportunidades
+            oferecidas pela Trybe?
+            <input type="checkbox" name="text-checkbox" id="promo">
+          </p>
+        </label>
+        <label for="agreement" class="form-label">
+          <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos
+            futuros.
+            <input type="checkbox" name="text-checkbox" id="agreement">
+          </p>
+        </label class="form-label">
+        <button type="submit" class="btn btn-outline-success" id="submit-btn">Enviar</button>
+        <button type="reset" class="btn btn-outline-primary" id="clear-btn">Limpar</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

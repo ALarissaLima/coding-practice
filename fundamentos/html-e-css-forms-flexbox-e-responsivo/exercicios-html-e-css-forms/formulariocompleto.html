@@ -1,0 +1,92 @@
+<!-- CRIANDO UM FORMULÁRIO COMPLETO -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Form Template</h1>
+    <form action="" method="GET" enctype="multipart/form-data">
+        <p>Upload your photo:</p>
+        <input type="file" name="photo" id="profile-photo">
+        <br><br>
+        <label for="full-name"> Full name:
+            <input type="text" name="name" id="full-name" placeholder="Type your name" required>
+        </label>
+        <label for="input-email"> E-mail:
+            <input type="email" name="email" id="input-email" placeholder="Type your e-mail" required>
+        </label>
+        <label for="input-country">Country:
+            <select name="country" id="input-country">
+                <option value="arg">Argentina</option>
+                <option value="bra">Brazil</option>
+                <option value="chi">Chile</option>
+                <option value="col">Colombia</option>
+                <option value="ecu">Ecuador</option>
+                <option value="guy">Guyana</option>
+                <option value="para">Paraguay</option>
+                <option value="peru">Peru</option>
+                <option value="suri">Suriname</option>
+                <option value="uru">Uruguay</option>
+                <option value="vene">Venezuela</option>
+            </select>
+        </label>
+        <p>Popular food in your country:</p>
+        <label for="food-1">
+            <input type="radio" id="food-1" name="popular-food" value="empanadas"> Empanadas
+            </label>
+            <label for="food-2">
+                <input type="radio" id="food-2" name="popular-food" value="feijoada"> Feijoada
+            </label>
+            <label for="food-3">
+                <input type="radio" id="food-3" name="popular-food" value="ceviche"> Ceviche
+            </label>
+            <label for="food-4">
+                <input type="radio" id="food-4" name="popular-food" value="arepas"> Arepas
+            </label>
+            <label for="food-5">
+                <input type="radio" id="food-5" name="popular-food" value="cuy"> Cuy
+            </label>
+            <label for="food-6">
+                <input type="radio" id="food-6" name="popular-food" value="pepper-pot"> Pepper Pot
+            </label>
+            <label for="food-07">
+                <input type="radio" id="food-7" name="popular-food" value="chipa"> Chipa
+            </label>
+            <label for="food-8">
+                <input type="radio" id="food-8" name="popular-food" value="anticuchos"> Anticuchos
+            </label>
+            <label for="food-9">
+                <input type="radio" id="food-9" name="popular-food" value="moksi-alesi"> Moksi-alesi
+            </label>
+            <label for="food-10">
+                <input type="radio" id="food-10" name="popular-food" value="chivito"> Chivito
+            </label>
+            <label for="food-11">
+                <input type="radio" id="food-11" name="popular-food" value="pabellón-criollo"> Pabellón Criollo
+            </label>
+            <label for="food-12">
+                <input type="radio" id="food-12" name="popular-food" value="other" checked> Other
+            </label>
+            <p>About Me:</p>
+            <textarea name="about-me" id="textarea-1" cols="120" rows="5">
+            </textarea>
+            <br>
+            <label for="input-password">Password:
+                <input type="password" id="input-password" name="password" autocomplete="off" required>
+            </label>
+            <label for="checkbox-promotions">
+                <input type="checkbox" name="promotions" id="checkbox-promotions">Do you want to receive news and promotions by email?
+            </label>
+            <br>
+            <button type="submit" id="submitButton">Submit Form</button>
+    </form>
+<p id="Result"></p>
+</body>
+
+</html>

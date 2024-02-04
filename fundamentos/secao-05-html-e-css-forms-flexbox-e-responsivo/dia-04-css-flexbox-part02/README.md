@@ -1,3 +1,0 @@
-# Seção: 05 / Dia 04
-
-//LEMBRAR DE ATUALIZAR 

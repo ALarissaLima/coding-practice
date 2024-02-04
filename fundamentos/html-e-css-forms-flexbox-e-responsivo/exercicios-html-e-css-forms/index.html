@@ -1,0 +1,33 @@
+<!--HTML E CSS FORMS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!-- TÍTULO DO FORMULÁRIO -->
+    <h1>FORMULÁRIO</h1>
+    <!-- INICÍO DO CÓDIGO DO FORMULÁRIO -->
+    <form action="" method="post" enctype="multipart/form-data">
+        <!--RÓTULO PARA A CAIXA DE INPUT
+        for: conexao entre a label e a caixa de input-->
+        <label for = "input-text">Digite seu nome: </label>
+        <!-- ESPAÇO PARA O PREENCHIMENTO DAS INFORMAÇOES DO TIPO TEXTO.
+        placeholder: TEXTO TEMPORÁRIO (GERALMENTE INSTRUÇOES) QUE SERÁ SUBSTITUIDO PELA INF FORNECIDA PELO USUARIO-->
+        <input type="text" placeholder="digite algum coisa" required class = ""
+        value="" name = "texto" id="input-text" required> 
+       <!-- SENHA-->
+       <label for = "password">Digite a senha: </label>
+       <input type="password" name="senha" id="password" required>
+        <!-- CAIXA DE TEXTO P/ + INF
+        rows: QNT DE LINHAS
+        cols: QNT DE COLUNAS-->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <!-- BOTÃO DE SUBMETER AS INFORMAÇÕES -->
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>

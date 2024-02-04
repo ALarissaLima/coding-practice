@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: black;
+}
+
+#icone {
+    padding: 5px;
+    background-color: white;
+}
+
+/*MANTER A "BARRA DE BUSCA" NA DIREITA*/
+#img-interna {
+    float: right;
+}
+
+#header h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 70px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    margin: 0;
+}
+
+#img-header {
+    width: 100px;
+}
+
+#img-interna {
+    width: 500px;
+    float: right;
+}
+
+.shrimp {
+    margin: auto;
+    width: 600px;
+    display: inline-block;
+    display: flow;
+}
+
+/* PARA COLORIR A LINHA TODA DE AMARELO*/
+#nav-area {
+    background-color: #ffcc02;
+    text-align: center;
+    padding: 10px;
+}
+
+/*PARA ESTILIZAR O LINK*/
+#nav-area a {
+    color: black;
+    text-decoration: none;
+    font-size: 20PX;
+    padding-right: 20px;
+}
+
+/*PARA ALINHAR OS LINKS*/
+#nav-area li {
+    display: inline;
+    padding: 20px;
+
+}
+
+
+#artigo {
+    margin: auto;
+    background-color: white;
+    color: black;
+    width: 600px;
+    right: 700px;
+    text-align: justify;
+    border: 2px solid black;
+    padding: 50px;
+}
+
+#tabela {
+    width: 600px;
+}
+aside {
+    margin-top: 0;
+    width: 45%;
+    float: right;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+aside a {
+    display: flow;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    padding: 5px;
+    text-align: center;
+}
+
+#secao-03 a {
+    text-decoration: none;
+    font-size: 15PX;
+    color: black;
+
+}
+
+#contato {
+    color: white;
+    text-align: center;
+}

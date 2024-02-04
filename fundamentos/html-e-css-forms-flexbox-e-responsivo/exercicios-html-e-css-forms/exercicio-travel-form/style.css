@@ -1,0 +1,39 @@
+* {
+  font-family: Plus Jakarta Sans, sans-serif;
+  margin: 0;
+}
+
+body {
+  background-image: url('praia.jpg');
+  background-size: cover;
+
+}
+
+main {
+  display: flex;
+  width: 900px;
+}
+
+section {
+  margin-bottom: 30px;
+  margin-left: 110%;
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+}
+
+#title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#main-form {
+  margin-top: 0;
+  display: grid;
+  width: 400px;
+  font-size: 14px;
+}
+
+#question {
+  resize: none;
+}
